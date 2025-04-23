@@ -1,6 +1,6 @@
 use rusqlite::Connection;
 use anyhow::Result;
-//mod db;
+mod db;
 
 fn main() -> Result<()> {
     let conn = Connection::open("./db/gym_tracker.db")?;
